@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head>
+<head> 
 <meta charset="UTF-8">
 <title>DOM Traversal</title>
 <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
@@ -38,6 +38,16 @@
     <p class="house-info"></p><!-- replace this with house details (github gist) -->
 </main>  <!--end mainContainer-->
 
-<script src="js/GOT_master.js"></script>
+<!-- Lightbox goes here, at the top of the stack -->
+<section class="lightbox">
+    <span class="lightbox-close">X</span>
+
+<!-- show the current house video -->
+    <video class="videoPlayer" src="video/House-Stark.mp4"></video>
+    <button class="playPause">Pause</button>
+    <button class="rewind">Rewind</button>
+</section>
+
+<script src="js/main.js"></script>
 </body>
 </html>
