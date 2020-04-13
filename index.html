@@ -2,7 +2,9 @@
 <html>
 <head> 
 <meta charset="UTF-8">
-<title>DOM Traversal</title>
+<title>When you play the Game of Thrones, you win or you die.</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
 </head>
@@ -40,12 +42,21 @@
 
 <!-- Lightbox goes here, at the top of the stack -->
 <section class="lightbox">
-    <span class="lightbox-close">X</span>
+    <span class="close-button">X</span>
 
 <!-- show the current house video -->
-    <video class="videoPlayer" src="video/House-Stark.mp4"></video>
-    <button class="playPause">Pause</button>
-    <button class="rewind">Rewind</button>
+    <video src="video/House-Stark.mp4"></video>
+
+    <div class="vid-controls">
+        <span class="play-button">
+            <i class="fas fa-play-circle"></i>
+        </span>
+
+        <span class="play-button">
+            <button>Rewind</button>
+        </span>
+    </div>
+
 </section>
 
 <script src="js/main.js"></script>
