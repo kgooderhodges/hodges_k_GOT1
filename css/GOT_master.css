@@ -11,8 +11,12 @@
 
 /* ----- default styles ----- */
 body { background-image:url(../images/grungeBG.jpg);
-	background-repeat:no-repeat; background-position:center center;
-	background-color:#000000; font-size:16px; }
+	background-repeat:no-repeat; 
+	background-position: top center;
+	background-color:#000000; 
+	font-size:16px; 
+	color: #fff;
+}
 
 h1 {
 	font-family: 'GOT_font';
@@ -63,23 +67,33 @@ main {
 	-moz-transition:-moz-transform .3s;
 }
 
-.stark { background-position:0px -54px; }
-.stark:hover { background-position:0px 0px; }
+.stark { background-position:-6px -54px; }
+.stark:hover { background-position:-6px 0px; }
 
-.baratheon { background-position:-50.5px -54px; }
-.baratheon:hover { background-position:-51px 0px; }
+.baratheon { background-position:-56.5px -54px; }
+.baratheon:hover { background-position:-56.5px 0px; }
 
-.lannister { background-position:-101px -54px; }
-.lannister:hover { background-position:-101px 0px; }
+.lannister { background-position:-107px -54px; }
+.lannister:hover { background-position:-107px 0px; }
 
-.tully { background-position:-152px -54px; }
-.tully:hover { background-position:-152px 0px; }
+.tully { background-position:-158px -54px; }
+.tully:hover { background-position:-158px 0px; }
 
-.greyjoy { background-position:-202px -54px; }
-.greyjoy:hover { background-position:-202px 0px; }
+.greyjoy { background-position:-208px -54px; }
+.greyjoy:hover { background-position:-208px 0px; }
 
-.arryn { background-position:-253px -54px; }
-.arryn:hover { background-position:-253px 0px; }
+.arryn { background-position:-259px -54px; }
+.arryn:hover { background-position:-259px 0px; }
+
+.targaryen { background-position:-310px -54px; }
+.targaryen:hover { background-position:-310px 0px; }
+
+.tyrell { background-position:-360px -54px; }
+.tyrell:hover { background-position:-360px 0px; }
+
+.frey { background-position:-410px -54px; }
+.frey:hover { background-position:-410px 0px; }
+
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -110,7 +124,7 @@ main {
 	display:block;
 }
 
-.lightbox-close {
+.close-button {
 	color: white;
 	float: right;
 	margin-right: 200px;
@@ -124,6 +138,12 @@ main {
 	padding-top: 20px;
 }
 
+.vid-controls span {
+	color: white;
+	font-size: 2em;
+	cursor: pointer;
+}
+
 video {
 	display: block;
 	margin-left: 10%;
@@ -131,3 +151,19 @@ video {
 	margin-top: 5%;
 	border: thin solid #949393;
 }
+
+.house-info {
+	font-size: 1.5em;
+	color: #fff;
+	line-height: 1.5;
+	width: 75%;
+	margin: 1.5em auto 0;
+}
+
+.timeBar {
+	height: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+  }
