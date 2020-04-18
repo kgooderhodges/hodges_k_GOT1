@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
-<head> 
+<head>
 <meta charset="UTF-8">
-<title>When you play the Game of Thrones, you win or you die.</title>
+<title>Winter is Coming</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
@@ -19,10 +19,10 @@
     		<img src="images/lannister.jpg"/>
     		<img src="images/tully.jpg"/>
     		<img src="images/greyjoy.jpg"/>
-            <img src="images/arryn.jpg"/>
-            <img src="images/targaryen.jpg"/>
-            <img src="images/tyrell.jpg"/>
-            <img src="images/frey.jpg"/>
+        <img src="images/arryn.jpg"/>
+        <img src="images/targaryen.jpg"/>
+        <img src="images/tyrell.jpg"/>
+        <img src="images/frey.jpg"/>
         </div>
     </section>
 
@@ -42,29 +42,29 @@
     </nav>
 
     <h1>It's the family name that lives on. It's all that lives on</h1><!-- replace this with the house name -->
-    <p class="house-info"></p>
+
+    <p class="house-info"></p><!-- replace this with house details (github gist) -->
 </main>  <!--end mainContainer-->
 
-<!-- Lightbox goes here, at the top of the stack -->
+<!-- put our lightbox on the top of the stack -->
 <section class="lightbox">
-    <div class="videoCon">
-        <span class="close-button">X</span>
+  <div class="vidCon">
+      <span class="close-button">X</span>
 
-    <!-- show the current house video -->
-        <video src="video/House-Stark.mp4"></video>
+  <!-- show the current house video -->
+      <video src="video/House-Stark.mp4" controls></video>
 
-        <div class="vid-controls">
-            <span class="play-button">
-
-            </span>
-
-            <span class="play-button">
-                <button>Rewind</button>
-            </span>
-        </div>
-    </div>  
+      <div class="controls corners">
+                  <button class="play corners" data-icon="|" aria-label="play pause toggle"></button>
+                  <input type="range" id="volumeBar" value="100">
+                  <button class="volume corners" data-icon="á" aria-label="volume"></button>
+              </div>
+          </div> 
+      </div>
+  </div>
 </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
