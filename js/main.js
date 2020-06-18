@@ -6,7 +6,7 @@
         lightBox = document.querySelector('.lightbox'),
         houseVideo = lightBox.querySelector('.lightbox video'),
         houseDes = document.querySelector('.house-info'),
-        closeButton = lightBox.querySelector('.close-button'),
+        closed = lightBox.querySelector('.close-button'),
         
         playBut = document.querySelector('#pauseBut'),
         muteBut = document.querySelector('.volume'),
@@ -15,7 +15,7 @@
         play = document.querySelector('.play'),
         volume = document.querySelector('#volumeBar');
   
-    //                         HOUSE CONTENT
+    //                         HOUSE CONTENT   
         const houseData = [
   
           [
